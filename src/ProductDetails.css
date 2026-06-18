@@ -1,0 +1,290 @@
+.details-container {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  background: #f7f8fc;
+}
+
+/* MAIN WRAPPER */
+.details-wrapper {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+
+  animation: pageLoad 0.5s ease;
+}
+
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* IMAGE */
+.image-section {
+  flex: 0 0 380px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #f9f9f9;
+  padding: 10px;
+
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.image-section img:hover {
+  transform: scale(1.03);
+}
+
+/* CONTENT */
+.content-section {
+  flex: 1;
+}
+
+.content-section h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #222;
+}
+
+.content-section h3 {
+  margin-top: 18px;
+  font-size: 18px;
+  border-left: 4px solid #28a745;
+  padding-left: 8px;
+  color: #333;
+}
+
+.content-section p {
+  color: #444;
+  line-height: 1.5;
+}
+
+/* LIST */
+.content-section ul {
+  padding-left: 18px;
+}
+
+.content-section li {
+  margin-bottom: 6px;
+  color: #555;
+  transition: all 0.2s ease;
+}
+
+.content-section li:hover {
+  transform: translateX(4px);
+  color: #000;
+}
+
+/* BUTTON */
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 16px;
+  background: #28a745;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.back-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(40,167,69,0.25);
+}
+
+/* ABOUT */
+.about {
+  width: 100%;
+}
+
+/* MODAL */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  background: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .details-wrapper {
+    flex-direction: column;
+  }
+
+  .image-section {
+    flex: 1;
+  }
+}
+.related-wrapper {
+  max-width: 1100px;
+  margin: 50px auto; /* 🔥 centers + spacing */
+  padding: 20px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.related-wrapper h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-left: 4px solid #28a745;
+  padding-left: 8px;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.related-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.related-card:hover {
+  transform: translateY(-5px);
+}
+
+.related-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+}
+
+.related-card p {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+
+@media (max-width: 768px) {
+  .details-wrapper {
+    flex-direction: column;
+    padding: 18px;
+    gap: 20px;
+  }
+
+  .image-section {
+    flex: 1;
+    width: 100%;
+  }
+
+  .content-section h2 {
+    font-size: 20px;
+  }
+}
+
+/* 📱 iPhone 12 / Android (390px - 412px - 375px) */
+@media (max-width: 430px) {
+  .details-container {
+    padding: 20px 10px;
+  }
+
+  .details-wrapper {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .image-section img {
+    padding: 6px;
+    border-radius: 8px;
+  }
+
+  .content-section h2 {
+    font-size: 18px;
+  }
+
+  .content-section h3 {
+    font-size: 16px;
+    padding-left: 6px;
+  }
+
+  .content-section p {
+    font-size: 14px;
+  }
+
+  .content-section li {
+    font-size: 13px;
+  }
+
+  .back-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* RELATED SECTION */
+  .related-wrapper {
+    margin: 30px 10px;
+    padding: 15px;
+  }
+
+  .related-wrapper h3 {
+    font-size: 18px;
+  }
+
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .related-card img {
+    height: 100px;
+  }
+
+  .related-card p {
+    font-size: 12px;
+  }
+}
+
+/* 📱 Extra small devices (375px specifically iPhone SE) */
+@media (max-width: 380px) {
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .content-section h2 {
+    font-size: 17px;
+  }
+
+  .content-section h3 {
+    font-size: 15px;
+  }
+}
