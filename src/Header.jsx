@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import GS_surgical from "./data/GS_surgical.jpeg";
 import Trusted_seller from "./data/Trusted_seller.jpeg";
@@ -179,15 +179,22 @@ const Header = () => {
 
         {/* MENU */}
         <div className="sidebar_menu">
-          <a href="/">Home</a>
+  <Link to="/" onClick={() => setSidebar(false)}>
+    Home
+  </Link>
 
-          <a href="/about">About Us</a>
+  <Link to="/about" onClick={() => setSidebar(false)}>
+    About Us
+  </Link>
 
-          <a href="/products">Products</a>
+  <Link to="/products" onClick={() => setSidebar(false)}>
+    Products
+  </Link>
 
-          <a href="/contact">Contact</a>
-        </div>
-
+  <Link to="/contact" onClick={() => setSidebar(false)}>
+    Contact
+  </Link>
+</div>
         {/* CALL NOW BUTTON */}
         <a
           href="tel:+918002445408"
