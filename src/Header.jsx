@@ -70,7 +70,7 @@ const Header = () => {
           {/* COMPANY INFO */}
           <div className="company_info">
             <h1>GS Surgical</h1>
-            <p>GST No. Coming soon</p>
+            <p>GST No. 07PRTPK3417C1ZF</p>
           </div>
         </div>
 
