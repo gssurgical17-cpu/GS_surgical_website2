@@ -54,8 +54,8 @@ const Footer = () => {
         <div className='footer_item'>
           <FaPhoneAlt className='footer_icon' />
 
-          <a href='tel:+918002445408'>
-            +91 8002445408
+          <a href='tel:+919599518816'>
+            +91 9599518816
           </a>
           <p>Sagar kumar (Proprietor)</p>
         </div>
@@ -66,7 +66,7 @@ const Footer = () => {
           <FaWhatsapp className='footer_icon' />
 
           <a
-            href='https://wa.me/918002445408'
+            href='https://wa.me/919599518816'
             target='_blank'
             rel='noreferrer'
           >
