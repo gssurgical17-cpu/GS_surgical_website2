@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import './Terms'
 
 import GS_surgical from './data/GS_surgical.jpeg'
 
@@ -9,6 +10,7 @@ import {
   FaWhatsapp,
   FaMapMarkerAlt
 } from 'react-icons/fa'
+import Terms from './Terms'
 
 const Footer = () => {
   return (
@@ -33,6 +35,7 @@ const Footer = () => {
           delivering quality healthcare solutions with reliability
           and customer satisfaction.
         </p>
+        <Terms/>
 
       </div>
 
