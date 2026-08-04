@@ -1,0 +1,23 @@
+.terms-container {
+  display: inline-block;
+}
+
+.terms-link {
+  color: #fac928;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.terms-link:hover {
+  color: #56fd53;
+  text-decoration-thickness: 2px;
+}
+
+.terms-link:active {
+  color: #0A2A5C;
+  opacity: 0.8;
+}
